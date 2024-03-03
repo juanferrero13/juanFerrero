@@ -1,0 +1,122 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    background-color: black;
+    font-family: 'Titillium Web', sans-serif;
+    border-bottom: 1px solid white;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.logo1,
+.logo2 {
+    font-size: 2rem;
+    color: white;
+    padding-left: 2rem;
+    text-decoration: none;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+}
+
+.linkLogo1,
+.linkLogo2 {
+    text-decoration: none;
+}
+
+.spanLogo1,
+.spanLogo2 {
+    font-weight: 600;
+    color: orange;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.item {
+    list-style: none;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.links {
+    text-decoration: none;
+    color: antiquewhite;
+}
+
+.links:hover {
+    color: white;
+    transition: all 0.5s;
+}
+
+.contact {
+    background-color: orange;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.contact:hover {
+    color: black;
+}
+
+.nav_btn {
+    font-size: 30px;
+    color: antiquewhite;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    visibility: hidden;
+    opacity: 0;
+    padding-right: 20px;
+}
+
+.nav_btn:hover {
+    transition: all 0.5s;
+}
+
+@media(max-width: 900px) {
+    .nav_btn {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    ul {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 1.5rem;
+        background: linear-gradient(150deg, black, #333);
+        transition: 1s;
+        transform: translateY(-100vh);
+    }
+
+    .responsive_nav {
+        transform: none;
+    }
+
+    .close {
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+        font-size: 30px;
+        color: antiquewhite;
+        cursor: pointer;
+        border: none;
+    }
+
+    .links {
+        font-size: 1.5rem;
+    }
+}

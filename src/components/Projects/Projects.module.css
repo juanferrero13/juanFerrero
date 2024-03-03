@@ -1,0 +1,104 @@
+.projects {
+    background-color: rgb(236, 234, 234);
+    padding-block: 4rem;
+    margin-top: 75px;
+}
+
+.projectTitle {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 35px;
+    padding-bottom: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.projectTitle::before,
+.projectTitle::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(150deg, blue, red, deeppink, blue);
+    margin: 10px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding-inline: 15px;
+}
+
+.cards {
+    font-family: 'Montserrat', sans-serif;
+    width: 350px;
+    border: solid 1px rgb(214, 211, 211);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.cardName {
+    height: 200px;
+    color: black;
+    font-size: 30px;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.iconsCard {
+    font-size: 50px;
+}
+
+.dw {
+    background: linear-gradient(150deg, blue, violet);
+}
+
+.js {
+    background: linear-gradient(150deg, orange, red);
+}
+
+.react {
+    background: linear-gradient(150deg, green, gray);
+}
+
+.titleCard {
+    padding-inline: 10px;
+    padding-top: 15px;
+    font-size: 22px;
+}
+
+.paragraphCard {
+    padding-inline: 10px;
+    font-size: 18px;
+}
+
+.btnCard {
+    margin: 25px 10px 10px;
+    padding: 12px 32px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: solid 2px black;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+
+.btnCard:hover {
+    transition: all 0.5s;
+    background-color: white;
+    border: solid 2px black;
+    color: black;
+}
+
+/* -------------------- MEDIAS QUERIES -------------------- */
+
+@media(max-width: 1100px) {
+    .container {
+        gap: 2rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}

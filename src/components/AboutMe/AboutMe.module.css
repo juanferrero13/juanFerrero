@@ -1,0 +1,86 @@
+.container {
+    margin-top: 4rem;
+    background-color: rgb(236, 234, 234);
+    padding-block: 4rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.aboutMe {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+}
+
+.title {
+    font-size: 35px;
+}
+
+.subtitle {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: orangered;
+}
+
+.paragraph {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.spanParagraph {
+    font-weight: 600;
+    color: orange;
+}
+
+.strong {
+    font-size: 18px;
+    margin-top: 8px;
+}
+
+.cv {
+    margin-top: 65px;
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    border: 0;
+    background-image: linear-gradient(150deg, orange, orangered, rgb(252, 202, 109));
+    border-radius: 8px;
+    color: white;
+    display: flex;
+    font-size: 18px;
+    padding: 5px;
+    cursor: pointer;
+    transition: .3s;
+    font-weight: 500;
+}
+
+.btn:active {
+    transform: scale(1.1);
+}
+
+.btn span {
+    background-color: black;
+    padding: 16px 24px;
+    border-radius: 6px;
+    transition: .3s;
+}
+
+.btn:hover span {
+    background: none;
+}
+
+/* -------------------- MEDIAS QUERIES -------------------- */
+
+@media(max-width:600px) {
+    .aboutMe {
+        width: 90%;
+    }
+}
+
+@media(max-width:400px) {
+    .btn {
+        font-size: 16px;
+    }
+}

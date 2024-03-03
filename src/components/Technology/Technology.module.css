@@ -1,0 +1,320 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "titles img";
+    justify-items: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    width: 80%;
+    margin: auto;
+    padding-top: 75px;
+    gap: 0 15px;
+}
+
+.titles {
+    grid-area: titles;
+}
+
+.subtitle {
+    font-size: 40px;
+    padding-bottom: 10px;
+}
+
+.paragraph {
+    font-size: 20px;
+}
+
+.strong1 {
+    color: orangered;
+    font-weight: 500;
+}
+
+.strong2 {
+    font-weight: 500;
+}
+
+.img {
+    grid-area: img;
+    display: grid;
+    grid-template-areas:
+        "html css js react"
+        "boot tail sass git"
+        "github node firebase chakra";
+    justify-items: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.imgHtml {
+    width: 85px;
+    grid-area: html;
+    display: inline-block;
+    animation: float 5s ease-in-out infinite;
+}
+
+.imgCss {
+    width: 85px;
+    grid-area: css;
+    display: inline-block;
+    animation: float 5s ease-in-out infinite;
+    animation-delay: 1s;
+}
+
+.imgJs {
+    width: 90px;
+    grid-area: js;
+    display: inline-block;
+    animation: float 5s ease-in-out infinite;
+    animation-delay: 2s;
+}
+
+.imgReact {
+    width: 110px;
+    grid-area: react;
+    display: inline-block;
+    animation: float 5s ease-in-out infinite;
+    animation-delay: 3s;
+}
+
+.imgBoot {
+    width: 105px;
+    grid-area: boot;
+    display: inline-block;
+    animation: float 5s ease-in-out infinite;
+}
+
+.imgTail {
+    width: 115px;
+    grid-area: tail;
+    display: inline-block;
+    animation: float 5s ease-in-out infinite;
+    animation-delay: 1s;
+}
+
+.imgSass {
+    width: 105px;
+    grid-area: sass;
+    display: inline-block;
+    animation: float 5s ease-in-out infinite;
+    animation-delay: 2s;
+}
+
+.imgGit {
+    width: 100px;
+    grid-area: git;
+    display: inline-block;
+    animation: float 5s ease-in-out infinite;
+    animation-delay: 3s;
+}
+
+.imgGithub {
+    width: 95px;
+    grid-area: github;
+    display: inline-block;
+    animation: float 5s ease-in-out infinite;
+}
+
+.imgNode {
+    width: 90px;
+    grid-area: node;
+    display: inline-block;
+    animation: float 5s ease-in-out infinite;
+    animation-delay: 1s;
+}
+
+.imgFirebase {
+    width: 100px;
+    grid-area: firebase;
+    display: inline-block;
+    animation: float 5s ease-in-out infinite;
+    animation-delay: 2s;
+}
+
+.imgChakra {
+    width: 90px;
+    grid-area: chakra;
+    display: inline-block;
+    animation: float 5s ease-in-out infinite;
+    animation-delay: 3s;
+}
+
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* -------------------- MEDIAS QUERIES -------------------- */
+
+@media(max-width: 1200px) {
+    .container {
+        width: 90%;
+    }
+}
+
+@media(max-width: 1000px) {
+    .subtitle {
+        font-size: 30px;
+    }
+
+    .paragraph {
+        font-size: 18px;
+    }
+}
+
+@media(max-width: 950px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .img {
+        margin-top: 40px;
+    }
+}
+
+@media(max-width: 500px) {
+    .img {
+        grid-template-areas:
+            "html css js"
+            "react boot tail"
+            "sass git github"
+            "node firebase chakra";
+    }
+
+    .imgHtml {
+        width: 90px;
+        animation: none;
+    }
+
+    .imgCss {
+        width: 90px;
+        animation: none;
+    }
+
+    .imgJs {
+        width: 100px;
+        animation: none;
+    }
+
+    .imgReact {
+        width: 120px;
+        animation: none;
+    }
+
+    .imgBoot {
+        width: 110px;
+        animation: none;
+    }
+
+    .imgTail {
+        width: 130px;
+        animation: none;
+    }
+
+    .imgSass {
+        width: 110px;
+        animation: none;
+    }
+
+    .imgGit {
+        width: 110px;
+        animation: none;
+    }
+
+    .imgGithub {
+        width: 100px;
+        animation: none;
+    }
+
+    .imgNode {
+        width: 100px;
+        animation: none;
+    }
+
+    .imgFirebase {
+        width: 100px;
+        animation: none;
+    }
+
+    .imgChakra {
+        width: 100px;
+        animation: none;
+    }
+}
+
+@media(max-width:400px) {
+    .img {
+        gap: 5px
+    }
+
+    .imgHtml {
+        width: 80px;
+    }
+
+    .imgCss {
+        width: 80px;
+    }
+
+    .imgJs {
+        width: 90px;
+    }
+
+    .imgReact {
+        width: 120px;
+    }
+
+    .imgBoot {
+        width: 100px;
+    }
+
+    .imgTail {
+        width: 120px;
+    }
+
+    .imgSass {
+        width: 100px;
+    }
+
+    .imgGit {
+        width: 100px;
+    }
+
+    .imgGithub {
+        width: 90px;
+    }
+
+    .imgNode {
+        width: 85px;
+    }
+
+    .imgFirebase {
+        width: 95px;
+    }
+
+    .imgChakra {
+        width: 90px;
+    }
+}
+
+@media(max-width:350px) {
+    .img {
+        grid-template-areas:
+            "html css"
+            "js react"
+            "boot tail"
+            "sass git"
+            "github node"
+            "firebase chakra";
+    }
+}

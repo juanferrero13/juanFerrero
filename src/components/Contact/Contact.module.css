@@ -1,0 +1,103 @@
+.container {
+    padding-block: 3rem;
+}
+
+.title {
+    text-align: center;
+    padding: 0 20px;
+    font-size: 35px;
+    font-family: 'Montserrat', sans-serif;
+    color: orange;
+}
+
+.subtitle {
+    text-align: center;
+    padding: 0 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.containerForm {
+    display: flex;
+    justify-content: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f8f2f2;
+    padding: 50px 25px;
+    border-radius: 15px;
+    color: black;
+    box-shadow: 0 0 5px black;
+}
+
+.label {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.input {
+    padding: 5px;
+    margin-bottom: 15px;
+    border: none;
+    border-bottom: 1px solid orange;
+    background-color: #f8f2f2;
+    color: black;
+}
+
+.textarea {
+    padding: 5px;
+    margin-bottom: 3rem;
+    resize: none;
+    border: 1px solid orange;
+    background-color: #f8f2f2;
+    color: black;
+    border-radius: 5px;
+}
+
+.send {
+    padding: 20px;
+    background: linear-gradient(150deg, orange, orangered);
+    width: 80%;
+    border-radius: 5px;
+    margin: auto;
+    color: black;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 2.5px;
+    transition: all 0.4s ease;
+}
+
+.send:active {
+    transform: scale(0.95);
+}
+
+.titleAlert {
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.icon {
+    font-size: 10px;
+}
+
+/* -------------------- MEDIAS QUERIES -------------------- */
+
+@media(max-width: 700px) {
+    .form {
+        width: 90%;
+    }
+}
+
+@media(max-width:400px) {
+    .send {
+        padding: 12px 15px;
+    }
+}

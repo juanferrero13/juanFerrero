@@ -1,0 +1,54 @@
+.footer {
+    background-color: #333;
+    text-align: center;
+    padding-inline: 15px;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.title {
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    padding-top: 40px;
+    color: white;
+}
+
+.title::before,
+.title::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background-color: orange;
+    margin: 10px;
+}
+
+.socialR {
+    font-size: 35px;
+    padding-inline: 10px;
+    color: white;
+}
+
+.socialR:hover {
+    cursor: pointer;
+    color: orange;
+    transition: all 0.3s;
+}
+
+.footer p {
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+    margin-top: 30px;
+    border-top: 1px solid #ddd8d8;
+    padding-block: 20px;
+}
+
+.footer span {
+    color: orangered;
+}
+
+@media(max-width:660px) {
+    .footer p {
+        font-size: 17px;
+    }
+}
