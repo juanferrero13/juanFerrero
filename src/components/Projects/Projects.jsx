@@ -37,7 +37,7 @@ export const Projects = () => {
                         React Js
                         <p className={style.iconsCard}><FaReact /></p>
                     </div>
-                    <h3 className={style.titleCard}>De La Cabeza</h3>
+                    <h3 className={style.titleCard}>deLaCabeza!</h3>
                     <p className={style.paragraphCard}>De La Cabeza es un e-commerce especializado en gorras, tanto clásicas como modernas y ofrece también gorros. En este proyecto implemento el uso de la base de datos Firebase/Firestore.</p>
                     <a href={react} target="_blank"><button className={style.btnCard}>Visitar</button></a>
                 </div>

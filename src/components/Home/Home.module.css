@@ -1,18 +1,11 @@
-.heroParallax {
+.hero {
     width: 100%;
-    background-color: black;
-    height: 90vh;
-    background: no-repeat fixed center url("/public/image/img-back.jpg");
+    height: 100vh;
+    background: no-repeat center url("/public/image/hero-img.jpg");
     background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-}
-
-.hero {
-    display: flex;
-    flex-direction: column;
     align-items: center;
 }
 
