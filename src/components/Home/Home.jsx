@@ -26,13 +26,13 @@ export const Home = () => {
 
     return (
         <>
-                <div className={style.hero}>
-                    <h2 className={style.title}>Bienvenidos<br />a mi sitio web</h2>
-                    <button className={style.heroBtn} onClick={scrollToContact}>CONTÁCTAME</button>
-                </div>
+            <div className={style.hero}>
+                <h2 className={style.title}>Bienvenidos<br />a mi sitio web</h2>
+                <button className={style.heroBtn} onClick={scrollToContact}>CONTÁCTAME</button>
+            </div>
             <div className={style.home}>
                 <h1 className={style.subtitle} data-aos="fade-right">¡Hola! Soy Juan,<span className={style.subtitleSpan}> Desarrollador Frontend.</span></h1>
-                <p className={style.paragraph}>Frontend Developer con experiencia en <strong>HTML5, CSS3, JavaScript y React JS.</strong> Me apasiona la programación y la tecnología; actualmente me encuentro en la búsqueda de desafíos laborales que me permitan insertarme en el mundo IT.</p>
+                <p className={style.paragraph}>Frontend Developer con sólida experiencia principalmente en <strong>HTML5, CSS3, JavaScript y React JS.</strong> Me apasiona la programación y la tecnología en general. Crear sitios web desde principio a fin con la más alta calidad es mi propósito, ofreciendo soluciones de excelencia.</p>
                 <img className={style.img} src="image/home-img-me.jpg" alt="foto-personal" />
             </div>
         </>
