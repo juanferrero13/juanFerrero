@@ -31,6 +31,7 @@
 .spanParagraph {
     font-weight: 600;
     color: orangered;
+    text-shadow: 1px 1px 1px black;
 }
 
 .strong {
