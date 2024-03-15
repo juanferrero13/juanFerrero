@@ -1,6 +1,6 @@
 .container {
     margin-top: 4rem;
-    background-color: rgb(236, 234, 234);
+    background: linear-gradient(-150deg, rgb(173, 173, 173) 50%, rgb(201, 194, 194) 50%);
     padding-block: 4rem;
     font-family: 'Montserrat', sans-serif;
 }
@@ -46,7 +46,7 @@
 
 .btn {
     border: 0;
-    background-image: linear-gradient(150deg, orange, orangered, rgb(252, 202, 109));
+    background-image: linear-gradient(150deg, orange, orangered, red);
     border-radius: 8px;
     color: white;
     display: flex;

@@ -61,10 +61,6 @@
     background-clip: auto;
 }
 
-/* .subtitleSpan {
-    color: orangered;
-} */
-
 .paragraph {
     font-size: 24px;
     grid-area: paragraph;
@@ -79,6 +75,7 @@
     width: 340px;
     grid-area: img;
     border: 10px solid whitesmoke;
+    box-shadow: 0 0 10px black;
 }
 
 /* -------------------- MEDIAS QUERIES -------------------- */

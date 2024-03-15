@@ -53,15 +53,31 @@
 }
 
 .dw {
-    background: linear-gradient(150deg, blue, violet);
+    animation: animation1 2s ease-in-out alternate infinite;
+    background: linear-gradient(150deg, blue, violet, blue, violet);
+    background-size: 300% 300%;
 }
 
 .js {
-    background: linear-gradient(150deg, orange, red);
+    animation: animation1 2s ease-in-out alternate infinite;
+    background: linear-gradient(150deg, orange, red, orange, red);
+    background-size: 300% 300%;
 }
 
 .react {
-    background: linear-gradient(150deg, green, gray);
+    animation: animation1 2s ease-in-out alternate infinite;
+    background: linear-gradient(150deg, green, gray, green, gray);
+    background-size: 300% 300%;
+}
+
+@keyframes animation1 {
+    from {
+        background-position: 0 50%;
+    }
+
+    to {
+        background-position: 100% 50%;
+    }
 }
 
 .titleCard {
