@@ -2,7 +2,7 @@ import style from "./Technology.module.css"
 
 export const Technology = () => {
     return (
-        <div className={style.container}>
+        <section className={style.container}>
             <div className={style.titles}>
                 <h2 className={style.subtitle}>Código limpio y bien estructurado</h2>
                 <p className={style.paragraph}>Utilizo principalmente <strong className={style.strong1}>HTML5, CSS3, JavaScript y React Js</strong> para lograr sitios atractivos y dinámicos. También empleo el uso de frameworks como <strong className={style.strong1}> Bootstrap y Tailwind CSS.</strong></p>
@@ -23,6 +23,6 @@ export const Technology = () => {
                 <img className={style.imgFirebase} src="image/firebase.png" alt="firebase" />
                 <img className={style.imgChakra} src="image/chakra.png" alt="chakra" />
             </div>
-        </div>
+        </section>
     )
 }

@@ -53,6 +53,10 @@ export const Contact = () => {
                     <label className={style.label}>MENSAJE</label>
                     <textarea className={style.textarea} name="message" placeholder='Mensaje' rows="10" required />
                     <input className={style.send} type="submit" value="ENVIAR" />
+                    <span className={style.spanForm}></span>
+                    <span className={style.spanForm}></span>
+                    <span className={style.spanForm}></span>
+                    <span className={style.spanForm}></span>
                 </form>
             </div>
         </section>

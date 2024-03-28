@@ -60,7 +60,7 @@
 
 .js {
     animation: animation1 2s ease-in-out alternate infinite;
-    background: linear-gradient(150deg, orange, red, orange, red);
+    background: linear-gradient(150deg, orange, tomato, orange, tomato);
     background-size: 300% 300%;
 }
 

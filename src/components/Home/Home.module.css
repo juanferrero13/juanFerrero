@@ -7,6 +7,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
 }
 
 .title {
@@ -53,13 +54,13 @@
 
 .subtitle {
     grid-area: title;
-    background: linear-gradient(150deg, orangered, orange, red);
+    background: linear-gradient(orangered, orange);
     font-size: 60px;
-
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     background-clip: auto;
 }
+
 
 .paragraph {
     font-size: 24px;
@@ -75,7 +76,7 @@
     width: 340px;
     grid-area: img;
     border: 10px solid whitesmoke;
-    box-shadow: 0 0 10px black;
+    /* box-shadow: 0 0 10px black; */
 }
 
 /* -------------------- MEDIAS QUERIES -------------------- */
