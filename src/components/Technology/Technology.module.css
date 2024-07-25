@@ -1,320 +1,247 @@
 .container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas:
-        "titles img";
-    justify-items: center;
-    align-items: center;
-    font-family: 'Montserrat', sans-serif;
-    width: 80%;
-    margin: auto;
-    padding-top: 75px;
-    gap: 0 15px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: 'titles img';
+  justify-items: center;
+  align-items: center;
+  font-family: 'Montserrat', sans-serif;
+  width: 80%;
+  margin: auto;
+  padding-top: 75px;
+  gap: 0 15px;
 }
 
 .titles {
-    grid-area: titles;
+  grid-area: titles;
 }
 
 .subtitle {
-    font-size: 40px;
-    padding-bottom: 10px;
+  font-size: 40px;
+  padding-bottom: 10px;
+  color: orange;
+  text-shadow: 1px 1px 1px #333;
 }
 
 .paragraph {
-    font-size: 20px;
+  font-size: 20px;
+  margin-bottom: 8px;
 }
 
 .strong1 {
-    color: orangered;
-    font-weight: 500;
+  color: orangered;
+  font-weight: 500;
 }
 
 .strong2 {
-    font-weight: 500;
+  font-weight: 500;
 }
 
-.img {
-    grid-area: img;
-    display: grid;
-    grid-template-areas:
-        "html css js react"
-        "boot tail sass git"
-        "github node firebase chakra";
-    justify-items: center;
-    align-items: center;
-    gap: 10px;
+.logos {
+  grid-area: img;
+  display: grid;
+  grid-template-areas:
+    'html css js react'
+    'bootstrap tailwind sass git'
+    'github next node firebase'
+    'express mongo postman handlebars'
+    'chakra none none none';
+  gap: 1rem;
 }
 
-.imgHtml {
-    width: 85px;
-    grid-area: html;
-    display: inline-block;
-    animation: float 5s ease-in-out infinite;
+.logo {
+  font-size: 3.5rem;
 }
 
-.imgCss {
-    width: 85px;
-    grid-area: css;
-    display: inline-block;
-    animation: float 5s ease-in-out infinite;
-    animation-delay: 1s;
+.logoContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.imgJs {
-    width: 90px;
-    grid-area: js;
-    display: inline-block;
-    animation: float 5s ease-in-out infinite;
-    animation-delay: 2s;
+.logoContainer p {
+  color: #333;
+  font-weight: 500;
 }
 
-.imgReact {
-    width: 110px;
-    grid-area: react;
-    display: inline-block;
-    animation: float 5s ease-in-out infinite;
-    animation-delay: 3s;
+.logoContainerHtml {
+  grid-area: html;
+  color: #f4470b;
+  animation: float 5s ease-in-out infinite;
 }
 
-.imgBoot {
-    width: 105px;
-    grid-area: boot;
-    display: inline-block;
-    animation: float 5s ease-in-out infinite;
+.logoContainerCss {
+  grid-area: css;
+  color: #1775bb;
+  animation: float 5s ease-in-out infinite;
+  animation-delay: 1s;
 }
 
-.imgTail {
-    width: 115px;
-    grid-area: tail;
-    display: inline-block;
-    animation: float 5s ease-in-out infinite;
-    animation-delay: 1s;
+.logoContainerJs {
+  grid-area: js;
+  color: #fcb040;
+  animation: float 5s ease-in-out infinite;
+  animation-delay: 2s;
 }
 
-.imgSass {
-    width: 105px;
-    grid-area: sass;
-    display: inline-block;
-    animation: float 5s ease-in-out infinite;
-    animation-delay: 2s;
+.logoContainerReact {
+  grid-area: react;
+  color: #1399c4;
+  animation: float 5s ease-in-out infinite;
+  animation-delay: 3s;
 }
 
-.imgGit {
-    width: 100px;
-    grid-area: git;
-    display: inline-block;
-    animation: float 5s ease-in-out infinite;
-    animation-delay: 3s;
+.logoContainerBootstrap {
+  grid-area: bootstrap;
+  color: #7811f2;
+  animation: float 5s ease-in-out infinite;
 }
 
-.imgGithub {
-    width: 95px;
-    grid-area: github;
-    display: inline-block;
-    animation: float 5s ease-in-out infinite;
+.logoContainerTailwind {
+  grid-area: tailwind;
+  color: #36b7f0;
+  animation: float 5s ease-in-out infinite;
+  animation-delay: 1s;
 }
 
-.imgNode {
-    width: 90px;
-    grid-area: node;
-    display: inline-block;
-    animation: float 5s ease-in-out infinite;
-    animation-delay: 1s;
+.logoContainerSass {
+  grid-area: sass;
+  color: #c76393;
+  animation: float 5s ease-in-out infinite;
+  animation-delay: 2s;
 }
 
-.imgFirebase {
-    width: 100px;
-    grid-area: firebase;
-    display: inline-block;
-    animation: float 5s ease-in-out infinite;
-    animation-delay: 2s;
+.logoContainerGit {
+  grid-area: git;
+  color: #f05033;
+  animation: float 5s ease-in-out infinite;
+  animation-delay: 3s;
 }
 
-.imgChakra {
-    width: 90px;
-    grid-area: chakra;
-    display: inline-block;
-    animation: float 5s ease-in-out infinite;
-    animation-delay: 3s;
+.logoContainerGithub {
+  grid-area: github;
+  color: #000;
+  animation: float 5s ease-in-out infinite;
 }
 
+.logoContainerNext {
+  grid-area: next;
+  color: #000;
+  animation: float 5s ease-in-out infinite;
+  animation-delay: 1s;
+}
+
+.logoContainerNode {
+  grid-area: node;
+  color: #509941;
+  animation: float 5s ease-in-out infinite;
+  animation-delay: 2s;
+}
+
+.logoContainerFirebase {
+  grid-area: firebase;
+  color: #f1af2f;
+  animation: float 5s ease-in-out infinite;
+  animation-delay: 3s;
+}
+
+.logoContainerExpress {
+  grid-area: express;
+  color: #000;
+  animation: float 5s ease-in-out infinite;
+}
+
+.logoContainerMongo {
+  grid-area: mongo;
+  color: #10aa50;
+  animation: float 5s ease-in-out infinite;
+  animation-delay: 1s;
+}
+
+.logoContainerPostman {
+  grid-area: postman;
+  color: #ff6c38;
+  animation: float 5s ease-in-out infinite;
+  animation-delay: 2s;
+}
+
+.logoContainerHandlebars {
+  grid-area: handlebars;
+  color: #423426;
+  animation: float 5s ease-in-out infinite;
+  animation-delay: 3s;
+}
+
+.logoContainerChakra {
+  grid-area: chakra;
+  color: #57c4c2;
+  animation: float 5s ease-in-out infinite;
+}
 
 @keyframes float {
-    0% {
-        transform: translateY(0);
-    }
+  0% {
+    transform: translateY(0);
+  }
 
-    50% {
-        transform: translateY(-10px);
-    }
+  50% {
+    transform: translateY(-10px);
+  }
 
-    100% {
-        transform: translateY(0);
-    }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 /* -------------------- MEDIAS QUERIES -------------------- */
 
-@media(max-width: 1200px) {
-    .container {
-        width: 90%;
-    }
+@media (max-width: 1200px) {
+  .container {
+    width: 90%;
+  }
 }
 
-@media(max-width: 1000px) {
-    .subtitle {
-        font-size: 30px;
-    }
+@media (max-width: 1000px) {
+  .subtitle {
+    font-size: 30px;
+  }
 
-    .paragraph {
-        font-size: 18px;
-    }
+  .paragraph {
+    font-size: 18px;
+  }
 }
 
-@media(max-width: 950px) {
-    .container {
-        display: flex;
-        flex-direction: column;
-    }
+@media (max-width: 980px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
 
-    .img {
-        margin-top: 40px;
-    }
+  .img {
+    margin-top: 40px;
+  }
+
+  .titles {
+    margin-bottom: 1rem;
+  }
 }
 
-@media(max-width: 500px) {
-    .img {
-        grid-template-areas:
-            "html css js"
-            "react boot tail"
-            "sass git github"
-            "node firebase chakra";
-    }
-
-    .imgHtml {
-        width: 90px;
-        animation: none;
-    }
-
-    .imgCss {
-        width: 90px;
-        animation: none;
-    }
-
-    .imgJs {
-        width: 100px;
-        animation: none;
-    }
-
-    .imgReact {
-        width: 120px;
-        animation: none;
-    }
-
-    .imgBoot {
-        width: 110px;
-        animation: none;
-    }
-
-    .imgTail {
-        width: 130px;
-        animation: none;
-    }
-
-    .imgSass {
-        width: 110px;
-        animation: none;
-    }
-
-    .imgGit {
-        width: 110px;
-        animation: none;
-    }
-
-    .imgGithub {
-        width: 100px;
-        animation: none;
-    }
-
-    .imgNode {
-        width: 100px;
-        animation: none;
-    }
-
-    .imgFirebase {
-        width: 100px;
-        animation: none;
-    }
-
-    .imgChakra {
-        width: 100px;
-        animation: none;
-    }
+@media (max-width: 450px) {
+  .logos {
+    gap: 8px;
+  }
 }
 
-@media(max-width:400px) {
-    .img {
-        gap: 5px
-    }
+@media (max-width: 380px) {
+  .logos {
+    grid-template-areas:
+      'html css js'
+      'react bootstrap tailwind'
+      'sass git github'
+      'next node firebase'
+      'express mongo postman'
+      'handlebars chakra none';
+  }
 
-    .imgHtml {
-        width: 80px;
-    }
-
-    .imgCss {
-        width: 80px;
-    }
-
-    .imgJs {
-        width: 90px;
-    }
-
-    .imgReact {
-        width: 120px;
-    }
-
-    .imgBoot {
-        width: 100px;
-    }
-
-    .imgTail {
-        width: 120px;
-    }
-
-    .imgSass {
-        width: 100px;
-    }
-
-    .imgGit {
-        width: 100px;
-    }
-
-    .imgGithub {
-        width: 90px;
-    }
-
-    .imgNode {
-        width: 85px;
-    }
-
-    .imgFirebase {
-        width: 95px;
-    }
-
-    .imgChakra {
-        width: 90px;
-    }
-}
-
-@media(max-width:350px) {
-    .img {
-        grid-template-areas:
-            "html css"
-            "js react"
-            "boot tail"
-            "sass git"
-            "github node"
-            "firebase chakra";
-    }
+  .logoContainer {
+    animation: none;
+  }
 }

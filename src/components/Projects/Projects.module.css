@@ -1,120 +1,135 @@
 .projects {
-    background-color: rgb(236, 234, 234);
-    padding-block: 4rem;
-    margin-top: 75px;
+  background-color: rgb(236, 234, 234);
+  padding-block: 4rem;
+  margin-top: 75px;
 }
 
 .projectTitle {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 35px;
-    padding-bottom: 50px;
-    display: flex;
-    align-items: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 35px;
+  padding-bottom: 50px;
+  display: flex;
+  align-items: center;
 }
 
 .projectTitle::before,
 .projectTitle::after {
-    content: "";
-    flex: 1;
-    height: 1px;
-    background: linear-gradient(150deg, blue, red, deeppink, blue);
-    margin: 10px;
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(150deg, blue, red, deeppink, blue);
+  margin: 10px;
 }
 
 .container {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    padding-inline: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: auto;
+  gap: 3rem;
+  justify-content: center;
 }
 
 .cards {
-    font-family: 'Montserrat', sans-serif;
-    width: 350px;
-    border: solid 1px rgb(214, 211, 211);
-    border-radius: 10px;
-    overflow: hidden;
+  font-family: 'Montserrat', sans-serif;
+  width: 350px;
+  /* border: solid 1px rgb(214, 211, 211); */
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 5px black;
 }
 
 .cardName {
-    height: 200px;
-    color: black;
-    font-size: 30px;
-    font-weight: 700;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
+  height: 200px;
+  color: black;
+  font-size: 30px;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
 }
 
 .iconsCard {
-    font-size: 50px;
+  font-size: 50px;
 }
 
 .dw {
-    animation: animation1 2s ease-in-out alternate infinite;
-    background: linear-gradient(150deg, blue, violet, blue, violet);
-    background-size: 300% 300%;
+  animation: animation1 2s ease-in-out alternate infinite;
+  background: linear-gradient(150deg, blue, violet, blue, violet);
+  background-size: 300% 300%;
 }
 
 .js {
-    animation: animation1 2s ease-in-out alternate infinite;
-    background: linear-gradient(150deg, orange, tomato, orange, tomato);
-    background-size: 300% 300%;
+  animation: animation1 2s ease-in-out alternate infinite;
+  background: linear-gradient(150deg, orange, tomato, orange, tomato);
+  background-size: 300% 300%;
 }
 
 .react {
-    animation: animation1 2s ease-in-out alternate infinite;
-    background: linear-gradient(150deg, green, gray, green, gray);
-    background-size: 300% 300%;
+  animation: animation1 2s ease-in-out alternate infinite;
+  background: linear-gradient(150deg, green, gray, green, gray);
+  background-size: 300% 300%;
+}
+
+.tailwind {
+  animation: animation1 2s ease-in-out alternate infinite;
+  background: linear-gradient(150deg, #ba5536, #693d3d, #ba5536, #693d3d);
+  background-size: 300% 300%;
+}
+
+.reactAPI {
+  animation: animation1 2s ease-in-out alternate infinite;
+  background: linear-gradient(150deg, lightblue, purple, lightblue, purple);
+  background-size: 300% 300%;
 }
 
 @keyframes animation1 {
-    from {
-        background-position: 0 50%;
-    }
+  from {
+    background-position: 0 50%;
+  }
 
-    to {
-        background-position: 100% 50%;
-    }
+  to {
+    background-position: 100% 50%;
+  }
 }
 
 .titleCard {
-    padding-inline: 10px;
-    padding-top: 15px;
-    font-size: 22px;
+  padding-inline: 10px;
+  padding-top: 15px;
+  font-size: 22px;
 }
 
 .paragraphCard {
-    padding-inline: 10px;
-    font-size: 18px;
+  padding-inline: 10px;
+  font-size: 18px;
 }
 
 .btnCard {
-    margin: 25px 10px 10px;
-    padding: 12px 32px;
-    font-size: 18px;
-    border-radius: 5px;
-    border: solid 2px black;
-    cursor: pointer;
-    background-color: black;
-    color: white;
+  margin: 25px 10px 10px;
+  padding: 12px 32px;
+  font-size: 18px;
+  border-radius: 5px;
+  border: solid 2px black;
+  cursor: pointer;
+  background-color: black;
+  color: white;
 }
 
 .btnCard:hover {
-    transition: all 0.5s;
-    background-color: white;
-    border: solid 2px black;
-    color: black;
+  transition: all 0.5s;
+  background-color: white;
+  border: solid 2px black;
+  color: black;
 }
 
 /* -------------------- MEDIAS QUERIES -------------------- */
 
-@media(max-width: 1100px) {
-    .container {
-        gap: 2rem;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-}
+/* @media (max-width: 1100px) {
+  .container {
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+} */

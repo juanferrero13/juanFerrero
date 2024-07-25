@@ -31,8 +31,8 @@ export const Home = () => {
                 <button className={style.heroBtn} onClick={scrollToContact}>CONTÁCTAME</button>
             </div>
             <div className={style.home}>
-                <h1 className={style.subtitle}>Hola! Soy Juan,<span className={style.subtitleSpan}> Desarrollador Frontend.</span></h1>
-                <p className={style.paragraph}>Frontend Developer con sólida experiencia en <strong>HTML5, CSS3, JavaScript y React JS.</strong> Me apasiona la programación y la tecnología en general. Crear sitios y apps web desde principio a fin con la más alta calidad es mi propósito, ofreciendo soluciones de excelencia.</p>
+                <h1 className={style.subtitle}>Hola! Soy Juan, Desarrollador Frontend.</h1>
+                <p className={style.paragraph}>Frontend Developer con sólida experiencia en <strong>HTML5, CSS3, JavaScript y React.</strong> Me apasiona la programación y la tecnología en general. Crear sitios y apps web desde principio a fin con la más alta calidad es mi propósito, ofreciendo soluciones de excelencia.</p>
                 <img className={style.img} data-aos="zoom-out-up" src="image/home-img-me.jpg" alt="foto-personal" />
             </div>
         </>
