@@ -1,23 +1,24 @@
-import React, { useRef, useEffect } from 'react';
-import emailjs from '@emailjs/browser';
+import emailjs from '@emailjs/browser'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+import Swal from 'sweetalert2'
 import style from "./Contact.module.css"
-import Swal from 'sweetalert2';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import { useEffect } from 'react'
+import { useRef } from 'react'
 
 export const Contact = () => {
     const form = useRef()
 
     useEffect(() => {
-        AOS.init();
-    }, []);
+        AOS.init()
+    }, [])
 
     const sendEmail = (e) => {
         e.preventDefault()
 
         emailjs
-            .sendForm('service_llodtzc', 'template_dh69f2e', form.current, {
-                publicKey: '-lDCNe35xXTB_aLO-',
+            .sendForm('service_7awhj8o', 'template_kzyt53g', form.current, {
+                publicKey: 'ikYHRE2dqzoRV3q1r',
             })
             .then(
                 () => {
@@ -35,7 +36,19 @@ export const Contact = () => {
                     form.current.reset()
                 },
                 (error) => {
-                    console.log('Error', error.text)
+                    console.error('Error', error.text)
+                    Swal.fire({
+                        position: "top-end",
+                        icon: "error",
+                        title: "Error al enviar el mensaje, intente mas tarde",
+                        showConfirmButton: false,
+                        timer: 2000,
+                        customClass: {
+                            title: style.titleAlert,
+                            icon: style.icon
+                        }
+                    })
+                    form.current.reset()
                 },
             )
     }
