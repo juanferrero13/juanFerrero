@@ -55,6 +55,12 @@
   font-size: 50px;
 }
 
+.fs {
+  animation: animation1 2s ease-in-out alternate infinite;
+  background: linear-gradient(150deg, #a7d32d, #00b9f1, #a7d32d, #00b9f1);
+  background-size: 300% 300%;
+}
+
 .dw {
   animation: animation1 2s ease-in-out alternate infinite;
   background: linear-gradient(150deg, blue, violet, blue, violet);

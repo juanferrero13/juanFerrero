@@ -40,11 +40,11 @@
   grid-area: img;
   display: grid;
   grid-template-areas:
-    'html css js react'
-    'bootstrap tailwind sass git'
-    'github next node firebase'
-    'express mongo postman handlebars'
-    'chakra none none none';
+    'html css js ts'
+    'react bootstrap tailwind sass'
+    'git github next node'
+    'firebase express mongo postman'
+    'handlebars chakra python fastapi';
   gap: 1rem;
 }
 
@@ -83,98 +83,119 @@
   animation-delay: 2s;
 }
 
+.logoContainerTs {
+  grid-area: ts;
+  color: #007acc;
+  animation: float 5s ease-in-out infinite;
+  animation-delay: 3s;
+}
+
 .logoContainerReact {
   grid-area: react;
   color: #1399c4;
   animation: float 5s ease-in-out infinite;
-  animation-delay: 3s;
 }
 
 .logoContainerBootstrap {
   grid-area: bootstrap;
   color: #7811f2;
   animation: float 5s ease-in-out infinite;
+  animation-delay: 1s;
 }
 
 .logoContainerTailwind {
   grid-area: tailwind;
   color: #36b7f0;
   animation: float 5s ease-in-out infinite;
-  animation-delay: 1s;
+  animation-delay: 2s;
 }
 
 .logoContainerSass {
   grid-area: sass;
   color: #c76393;
   animation: float 5s ease-in-out infinite;
-  animation-delay: 2s;
+  animation-delay: 3s;
 }
 
 .logoContainerGit {
   grid-area: git;
   color: #f05033;
   animation: float 5s ease-in-out infinite;
-  animation-delay: 3s;
 }
 
 .logoContainerGithub {
   grid-area: github;
   color: #000;
   animation: float 5s ease-in-out infinite;
+  animation-delay: 1s;
 }
 
 .logoContainerNext {
   grid-area: next;
   color: #000;
   animation: float 5s ease-in-out infinite;
-  animation-delay: 1s;
+  animation-delay: 2s;
 }
 
 .logoContainerNode {
   grid-area: node;
   color: #509941;
   animation: float 5s ease-in-out infinite;
-  animation-delay: 2s;
+  animation-delay: 3s;
 }
 
 .logoContainerFirebase {
   grid-area: firebase;
   color: #f1af2f;
   animation: float 5s ease-in-out infinite;
-  animation-delay: 3s;
 }
 
 .logoContainerExpress {
   grid-area: express;
   color: #000;
   animation: float 5s ease-in-out infinite;
+  animation-delay: 1s;
 }
 
 .logoContainerMongo {
   grid-area: mongo;
   color: #10aa50;
   animation: float 5s ease-in-out infinite;
-  animation-delay: 1s;
+  animation-delay: 2s;
 }
 
 .logoContainerPostman {
   grid-area: postman;
   color: #ff6c38;
   animation: float 5s ease-in-out infinite;
-  animation-delay: 2s;
+  animation-delay: 3s;
 }
 
 .logoContainerHandlebars {
   grid-area: handlebars;
   color: #423426;
   animation: float 5s ease-in-out infinite;
-  animation-delay: 3s;
 }
 
 .logoContainerChakra {
   grid-area: chakra;
   color: #57c4c2;
   animation: float 5s ease-in-out infinite;
+  animation-delay: 1s;
+}
+
+.logoContainerPython {
+  grid-area: python;
+  color: #3e7bac;
+  animation: float 5s ease-in-out infinite;
+  animation-delay: 2s;
+}
+
+.logoContainerFastapi {
+  grid-area: fastapi;
+  color: #059386;
+  animation: float 5s ease-in-out infinite;
+  animation-delay: 3s;
 }
 
 @keyframes float {

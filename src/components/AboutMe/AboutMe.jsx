@@ -4,8 +4,8 @@ export const AboutMe = () => {
 
     const handleDownloadCV = () => {
         const downloadLink = document.createElement('a')
-        downloadLink.href = "cv/juan-pablo-ferrero-cv.pdf"
-        downloadLink.download = "juan-pablo-ferrero-cv.pdf"
+        downloadLink.href = "cv/juan-ferrero-cv.pdf"
+        downloadLink.download = "juan-ferrero-cv.pdf"
         document.body.appendChild(downloadLink)
         downloadLink.click()
         document.body.removeChild(downloadLink)
@@ -15,7 +15,7 @@ export const AboutMe = () => {
         <section className={style.container}>
             <div className={style.aboutMe}>
                 <h2 className={style.title}>Juan Pablo Ferrero</h2>
-                <h3 className={style.subtitle}>FRONTEND DEVELOPER</h3>
+                <h3 className={style.subtitle}>FULL STACK DEVELOPER</h3>
                 <p className={style.paragraph}>Nací en Cintra, Córdoba, en 1994. Mi pasión por la programación comenzó de manera autodidacta, explorando videos y tutoriales en YouTube y leyendo artículos en diversas plataformas web.</p>
                 <p className={style.paragraph}>A mediados de 2022, realicé mi primer curso en Udemy, titulado<span className={style.spanParagraph}> "Java y BlueJ | Introducción a las Bases de la Programación".</span></p>
                 <p className={style.paragraph}>Desde principios de 2023 hasta agosto de 2024, estudié <span className={style.spanParagraph}> Programación Full Stack </span>en Coderhouse. Actualmente, sigo perfeccionando mis habilidades tanto en Frontend como en Backend, y he comenzado a adentrarme profundamente en el fascinante mundo de Python, ampliando mis horizontes y desarrollando mis conocimientos.

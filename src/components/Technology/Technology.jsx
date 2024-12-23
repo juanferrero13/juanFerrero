@@ -15,6 +15,9 @@ import { SiMongodb } from "react-icons/si"
 import { SiPostman } from "react-icons/si"
 import { SiHandlebarsdotjs } from "react-icons/si"
 import { SiChakraui } from "react-icons/si"
+import { BiLogoTypescript } from "react-icons/bi"
+import { SiFastapi } from "react-icons/si"
+import { FaPython } from "react-icons/fa"
 import style from "./Technology.module.css"
 
 export const Technology = () => {
@@ -22,14 +25,15 @@ export const Technology = () => {
         <section className={style.container}>
             <div className={style.titles}>
                 <h2 className={style.subtitle}>Código limpio y bien estructurado</h2>
-                <p className={style.paragraph}>Utilizo principalmente <strong className={style.strong1}>HTML5, CSS3, JavaScript y React</strong> para lograr sitios atractivos y dinámicos. También empleo el uso de frameworks como <strong className={style.strong1}> Bootstrap y Tailwind CSS.</strong></p>
-                <p className={style.paragraph}>En mis proyectos he aplicado, además, otras tecnologías como<strong className={style.strong2}> SASS, GIT, GitHub, Next.js, Node.js, Firebase/Firestore, Express.js, MongoDB, Postman, Motores de Plantillas, Chakra UI, </strong>entre otras.</p>
+                <p className={style.paragraph}>Utilizo principalmente <strong className={style.strong1}>HTML5, CSS3, JavaScript, TypeScript, React y Express</strong> para lograr sitios atractivos y dinámicos. También empleo el uso de frameworks como <strong className={style.strong1}> Bootstrap y Tailwind CSS.</strong></p>
+                <p className={style.paragraph}>En mis proyectos he aplicado, además, otras tecnologías como<strong className={style.strong2}> SASS, GIT, GitHub, Next.js, Node.js, Firebase/Firestore, MongoDB, Postman, Motores de Plantillas, Chakra UI, FastAPI, </strong>entre otras.</p>
                 <p className={style.paragraph}>Mis diseños son <strong className={style.strong2}>responsivos,</strong> ofreciendo una experiencia óptima en cualquier dispositivo.</p>
             </div>
             <div className={style.logos}>
                 <div className={`${style.logoContainer} ${style.logoContainerHtml}`}><FaHtml5 className={style.logo} /><p>HTML5</p></div>
                 <div className={`${style.logoContainer} ${style.logoContainerCss}`}><FaCss3Alt className={style.logo} /><p>CSS3</p></div>
                 <div className={`${style.logoContainer} ${style.logoContainerJs}`}><IoLogoJavascript className={style.logo} /><p>JavaScript</p></div>
+                <div className={`${style.logoContainer} ${style.logoContainerTs}`}><BiLogoTypescript className={style.logo} /><p>TypeScript</p></div>
                 <div className={`${style.logoContainer} ${style.logoContainerReact}`}><FaReact className={style.logo} /><p>React</p></div>
                 <div className={`${style.logoContainer} ${style.logoContainerBootstrap}`}><FaBootstrap className={style.logo} /><p>Bootstrap</p></div>
                 <div className={`${style.logoContainer} ${style.logoContainerTailwind}`}><SiTailwindcss className={style.logo} /><p>Tailwind</p></div>
@@ -44,6 +48,8 @@ export const Technology = () => {
                 <div className={`${style.logoContainer} ${style.logoContainerPostman}`}><SiPostman className={style.logo} /><p>Postman</p></div>
                 <div className={`${style.logoContainer} ${style.logoContainerHandlebars}`}><SiHandlebarsdotjs className={style.logo} /><p>Handlebars</p></div>
                 <div className={`${style.logoContainer} ${style.logoContainerChakra}`}><SiChakraui className={style.logo} /><p>Chakra UI</p></div>
+                <div className={`${style.logoContainer} ${style.logoContainerPython}`}><FaPython className={style.logo} /><p>Python</p></div>
+                <div className={`${style.logoContainer} ${style.logoContainerFastapi}`}><SiFastapi className={style.logo} /><p>FastAPI</p></div>
             </div>
         </section>
     )

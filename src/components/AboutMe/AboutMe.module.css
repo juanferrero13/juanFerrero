@@ -23,15 +23,15 @@
   margin-bottom: 15px;
   color: orange;
   text-shadow: 0 0 1px black;
-  display: block;
+  /* display: block;
   white-space: nowrap;
   border-right: 4px solid;
   width: 19ch;
   animation: typing 2.5s steps(19), blink 0.5s infinite step-end alternate;
-  overflow: hidden;
+  overflow: hidden; */
 }
 
-@keyframes typing {
+/* @keyframes typing {
   from {
     width: 0;
   }
@@ -41,7 +41,7 @@
   50% {
     border-color: transparent;
   }
-}
+} */
 
 .paragraph {
   font-size: 18px;

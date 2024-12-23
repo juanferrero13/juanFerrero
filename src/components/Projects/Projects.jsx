@@ -6,7 +6,10 @@ import { IoLogoJavascript } from "react-icons/io5";
 import { FaReact } from "react-icons/fa";
 import { SiTailwindcss } from "react-icons/si";
 import { AiOutlineApi } from "react-icons/ai";
+import { SiExpress } from "react-icons/si";
+import { BiLogoTypescript } from "react-icons/bi";
 
+const fs = "https://github.com/juanferrero13/devtree_frontend"
 const dw = "https://github.com/juanferrero13/DesarrolloWeb"
 const js = "https://github.com/juanferrero13/JavaScript"
 const react = "https://github.com/juanferrero13/React"
@@ -18,6 +21,15 @@ export const Projects = () => {
         <section className={style.projects}>
             <h2 className={style.projectTitle}>Proyectos</h2>
             <div className={style.container}>
+                <div className={style.cards}>
+                    <div className={`${style.cardName} ${style.fs}`}>
+                        Full Stack
+                        <p className={style.iconsCard}><SiExpress /> <BiLogoTypescript /> <FaReact /></p>
+                    </div>
+                    <h3 className={style.titleCard}>DevTree</h3>
+                    <p className={style.paragraphCard}>DevTree es una aplicación diseñada para que desarrolladores compartan sus redes sociales. Este proyecto combina tecnologías como Express, TypeScript y React para ofrecer una experiencia moderna y eficiente.</p>
+                    <a href={fs} target="_blank" rel="noreferrer"><button className={style.btnCard}>Visitar</button></a>
+                </div>
                 <div className={style.cards}>
                     <div className={`${style.cardName} ${style.dw}`}>
                         Desarrollo Web
